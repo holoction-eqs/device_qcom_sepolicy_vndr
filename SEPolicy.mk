@@ -1,5 +1,5 @@
 # Board specific SELinux policy variable definitions
-SEPOLICY_PATH:= device/qcom/sepolicy_vndr/sm8450
+SEPOLICY_PATH:= device/qcom/sepolicy_vndr
 QSSI_SEPOLICY_PATH:= device/qcom/sepolicy
 BOARD_SYSTEM_EXT_PREBUILT_DIR := device/qcom/sepolicy/generic
 BOARD_PRODUCT_PREBUILT_DIR := device/qcom/sepolicy/generic/product
@@ -57,3 +57,4 @@ ifeq (,$(filter sdm845 sdm710, $(TARGET_BOARD_PLATFORM)))
     BOARD_VENDOR_SEPOLICY_DIRS += $(SEPOLICY_PATH)/qva/vendor/test/sysmonapp
     endif
 endif
+
